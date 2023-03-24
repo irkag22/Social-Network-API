@@ -16,14 +16,14 @@ const userSchema = new Schema(
         match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Must match an email address!'],
     },
     thought: {
-        type: Schema.Type.ObjectId,
+        type: Schema.Types.ObjectId,
         default: [],
-        ref: (Thought)
+        ref: 'Thought',
     },
     friends: {
-        type: Schema.Type.ObjectId,
+        type: Schema.Types.ObjectId,
         default: [],
-        ref: (User) 
+        ref: 'User',
     },
 
   },
