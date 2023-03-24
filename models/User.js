@@ -18,7 +18,7 @@ const userSchema = new Schema(
     thoughts: {
         type: Schema.Type.ObjectId,
         default: [],
-        ref: (Thought )
+        ref: (Thought)
     },
     friends: {
         type: Schema.Type.ObjectId,
@@ -34,7 +34,6 @@ const userSchema = new Schema(
     id: false,
   }
 );
-
 
 const User = model('user', userSchema);
 
