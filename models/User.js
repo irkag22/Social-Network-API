@@ -15,7 +15,7 @@ const userSchema = new Schema(
         unique: true,
         match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Must match an email address!'],
     },
-    thoughts: {
+    thought: {
         type: Schema.Type.ObjectId,
         default: [],
         ref: (Thought)
